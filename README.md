@@ -135,11 +135,11 @@ More detailed installation:
 
 Run:
 $ source ~/all/docs/txt/programs/python/file-sorter-1/venv/bin/activate;python3 /home/knoppix/all/docs/txt/programs/python/file-sorter-1/arlons-file-sorter.py ~/Desktop/drone/100MEDIA/
-
+```
 ---
 
 ## More:
-```New & Updated Features
+New & Updated Features
 🗂 Advanced Sorting
 
 Primary sort options:
@@ -186,7 +186,7 @@ Optional preference for future window-movement behavior (ctrl-drag groundwork ad
 
 ## 📝 Text File Viewing Enhancements
 
-```Text files are viewable alongside images
+Text files are viewable alongside images
 
 Configurable text scale factor
 
@@ -201,7 +201,7 @@ Text scale preference is saved/restored per session
 
 ## 🔗 External Program Integration
 
-```Ctrl + Right Click on a file opens it in an external program
+Ctrl + Right Click on a file opens it in an external program
 
 Separate configurable commands for:
 
@@ -220,7 +220,7 @@ Selectable via file picker
 
 Settings are saved and restored via session JSON
 
-```⚙ Settings Dialog Improvements
+⚙ Settings Dialog Improvements
 
 Added Apply button (non-modal, live updates)
 
@@ -241,7 +241,7 @@ Settings are treated as UI state rather than mirrored object state where possibl
 
 ## 💾 Session Restore & Startup Behavior
 
-```Full session auto-restore support:
+Full session auto-restore support:
 
 Folder
 
@@ -268,7 +268,7 @@ Overrides only the saved file index (not the rest of the session)
 
 ## 🖥 Desktop Integration (Linux)
 
-```Can be registered as a default image viewer
+Can be registered as a default image viewer
 
 Launches correctly when opening an image from the file manager
 
