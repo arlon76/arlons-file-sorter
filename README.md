@@ -188,7 +188,7 @@ $ source ~/all/docs/txt/programs/python/file-sorter-1/venv/bin/activate;python3 
 
 ## More:
 New & Updated Features
-🗂 Advanced Sorting
+🗂  Advanced Sorting
 
 Primary sort options:
 
@@ -215,7 +215,7 @@ Sort preferences are saved to and restored from the session JSON
 
 ---
 
-## 🖼 Navigation & Viewing Features and Improvements
+## 🖼  Navigation & Viewing Features and Improvements
 
 - Arrow-key navigation between images/files
 
@@ -310,7 +310,7 @@ Overrides only the saved file index (not the rest of the session)
 
 ---
 
-## 🖥 Desktop Integration (Linux)
+## 🖥  Desktop Integration (Linux)
 
 Can be registered as a default image viewer
 
