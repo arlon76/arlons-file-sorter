@@ -136,7 +136,7 @@ More detailed installation:
 Run:
 $ source ~/all/docs/txt/programs/python/file-sorter-1/venv/bin/activate;python3 /home/knoppix/all/docs/txt/programs/python/file-sorter-1/arlons-file-sorter.py ~/Desktop/drone/100MEDIA/
 
-More:
+## More:
 New & Updated Features
 🗂 Advanced Sorting
 
