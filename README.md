@@ -31,6 +31,54 @@ See the [LICENSE](LICENSE) file for details.
 
 ---
 
+# Why? Why This Program Exists ❓🤖
+
+**Why make another program for viewing and sorting files?**  
+Because **this one does both — better than anything else.** 🏆
+
+---
+
+## ⚡ Key Features
+
+- **View & Sort Simultaneously 🖼️📂**  
+  Flip through images or text files like a slideshow, and move them into folders **as you go**.
+
+- **Fast Navigation ⏩**  
+  Arrow keys, mouse buttons, or holding them down lets you zip through files **at lightning speed**.
+
+- **Folder Shortcuts 🔤**  
+  Assign letters to destination folders, then move files instantly as you browse. Sorting has never been this intuitive.
+
+- **Hands-Free Slideshow 🎞️**  
+  Press the mouse wheel to start an automatic slideshow — zoom works seamlessly **while running**.
+
+- **Zoom & View 🔍**  
+  Zoom works during both manual and automatic slideshows. Ctrl-drag lets you move the window if it goes off-screen.
+
+- **Customizable Settings ⚙️**  
+  Configure behavior to your workflow — everything is tweakable.
+
+- **OS Integration 💻**  
+  Open folders or files directly in the program. Use a secondary app for certain files with Ctrl+Right-Click. Double-click images to open instantly.
+
+---
+
+## 💡 Why It’s Unique
+
+- No other program I know of lets you **advance through a folder and sort into multiple folders at the same time**.  
+- Faster, smoother zoom than most image viewers.  
+- Built with **intent, ferocity, and completion** — a “one giant anti-splosion” of functionality.  
+
+---
+
+## 🚀 TL;DR
+
+**It’s easier. Faster. More capable.**  
+If you want to browse, view, and sort files **without switching programs**, this is the tool you’ve been waiting for.  
+There are minor trade-offs (like the title bar occasionally disappearing when zoomed in), but everything is predictable, tweakable, and intentional.  
+
+---
+
 ## Usage / Controls
 
 ### Navigation
