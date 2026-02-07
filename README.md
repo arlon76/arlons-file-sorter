@@ -192,15 +192,15 @@ New & Updated Features
 
 Primary sort options:
 
-Name
+- Name
 
-Date modified
+- Date modified
 
-Date created
+- Date created
 
-File size
+- File size
 
-File type
+- File type
 
 Secondary (dual) sort:
 
@@ -215,34 +215,30 @@ Sort preferences are saved to and restored from the session JSON
 
 ---
 
-## 🖼 Navigation & Viewing Improvements
+## 🖼 Navigation & Viewing Features and Improvements
 
-Arrow-key navigation between images/files
+- Arrow-key navigation between images/files
 
-Arrow-key zooming with optional centered zoom behavior
+- Arrow-key zooming with optional centered zoom behavior
 
-When enabled, zooming keeps the image center fixed on screen
+- When enabled, zooming keeps the image center fixed on screen
 
-Configurable via Settings dialog
+- Configurable via Settings dialog
 
-Mouse-wheel zoom remains cursor-centered
+- Mouse-wheel zoom remains cursor-centered
 
-Optional preference for future window-movement behavior (ctrl-drag groundwork added)
+- Optional preference for future window-movement behavior (ctrl-drag groundwork added)
 
 
 ---
 
-## 📝 Text File Viewing Enhancements
+## 📝 Text File Viewing Capabilities and Enhancements
 
-Text files are viewable alongside images
+- Text files are viewable alongside images
 
-Configurable text scale factor
+- Configurable text scale factor - Adjustable via Settings dialog
 
-Adjustable via Settings dialog
-
-Replaces previously hardcoded scaling
-
-Text scale preference is saved/restored per session
+- Text scale preference is saved/restored per session
 
 
 ---
@@ -253,20 +249,20 @@ Ctrl + Right Click on a file opens it in an external program
 
 Separate configurable commands for:
 
-Image files
+- Image files
 
-Text files
+- Text files
 
 Commands support arbitrary launch syntax
 (e.g. wine /path/to/notepad++.exe)
 
 Program paths are:
 
-Editable directly as text
+- Editable directly as text
 
-Selectable via file picker
+- Selectable via file picker
 
-Settings are saved and restored via session JSON
+- Settings are saved and restored via session JSON
 
 ⚙ Settings Dialog Improvements
 
@@ -274,13 +270,13 @@ Added Apply button (non-modal, live updates)
 
 Cancel reliably restores all prior settings, including:
 
-Checkboxes
+- Checkboxes
 
-Sort selections
+- Sort selections
 
-External program fields
+- External program fields
 
-Numeric preferences
+- Numeric preferences
 
 Settings are treated as UI state rather than mirrored object state where possible, reducing duplication and bugs
 
@@ -291,23 +287,23 @@ Settings are treated as UI state rather than mirrored object state where possibl
 
 Full session auto-restore support:
 
-Folder
+- Folder
 
-File index
+- File index
 
-Sorting preferences
+- Sorting preferences
 
-View settings (zoom, scale, etc.)
+- View settings (zoom, scale, etc.)
 
 Program can now be launched with:
 
-A folder path (original behavior)
+- A folder path (original behavior)
 
-A file path
+- A file path
 
-Automatically opens the file’s parent folder
+- Automatically opens the file’s parent folder
 
-Selects that file in the viewer
+- Selects that file in the viewer
 
 Overrides only the saved file index (not the rest of the session)
 
@@ -321,3 +317,37 @@ Can be registered as a default image viewer
 Launches correctly when opening an image from the file manager
 
 Uses a wrapper script to activate the Python virtual environment automatically
+
+---
+
+# 🙏 Thank You for Trying! 🎉🖖
+
+Thank you for **checking out Arlon’s File Sorter**!  
+Whether you’re an image ninja 🥷, a text wizard 🧙‍♂️, or just a file organization enthusiast 📂✨, we hope this program makes your life **easier, faster, and more fun**.  
+
+---
+
+## 🌟 Contributions & Ideas Welcome 💡🛠️
+
+- Think of a way to make navigation smoother?  
+- Found a tiny bug 🐛?  
+- Have a brilliant idea to add even more hands-on control?  
+
+Feel free to **fork, tweak, or improve** the program!  
+Even the tiniest improvement helps make **the handiest file sorting + image viewing program known to advanced civilization** 🚀🪐.  
+
+---
+
+## 🔗 Stay in Touch & Share
+
+- Open issues, submit pull requests, or drop suggestions.  
+- Spread the word if you love it ❤️ — the more people using it, the more epic it gets.  
+
+---
+
+### ⚡ TL;DR
+
+**You tried it. You improved it. You mastered it.**  
+Thanks for making this little slice of file-viewing greatness part of your workflow! 🌌✨🎉  
+
+
