@@ -44,6 +44,15 @@ if "--help" in sys.argv or "-h" in sys.argv: # print the README.md if you want, 
 		print("README.md not found.") # print the README.md if you want, with -h or --help 										#677 Help Text
 	sys.exit(0) # print the README.md if you want, with -h or --help 															#677 Help Text
 
+folder = sys.argv[1]
+p = Path(sys.argv[1])
+
+if p.is_file():
+    folder = p.parent
+else:
+    folder = p
+folder=str(folder)
+
 from collections import OrderedDict
 IMAGE_EXTS = list(OrderedDict.fromkeys([".jpg", ".JPG", ".JPEG", ".jpeg", ".png", ".bmp", ".gif", ".tiff"]))
 TEXT_EXTS = list(OrderedDict.fromkeys([	#684
