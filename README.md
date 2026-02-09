@@ -1,7 +1,7 @@
-# arlons-file-sorter
-# Arlon's File Sorter (PySide6 / Qt)
+# file-sorter.py
+# File Sorter (PySide6 / Qt)
 
-Usage: arlons-file-sorter.py [path-to-image-folder]
+Usage: file-sorter.py [path-to-image-folder]
 
 A fast, keyboard- and mouse-driven photo sorting tool for Linux.
 
@@ -188,6 +188,7 @@ $ source ~/all/docs/txt/programs/python/file-sorter-1/venv/bin/activate;python3 
 
 ## More:
 New & Updated Features
+
 🗂  Advanced Sorting
 
 Primary sort options:
