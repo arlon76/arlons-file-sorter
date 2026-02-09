@@ -1,5 +1,5 @@
 # file-sorter.py
-# File Sorter (PySide6 / Qt)
+# Arlon's File Sorter (PySide6 / Qt)
 
 Usage: file-sorter.py [path-to-image-folder]
 
