@@ -365,6 +365,11 @@ class ImageWindow(QWidget, LinkedWindowMixin):
 
 		delay = cw.delay_spinbox.value() or 0  # fallback to 0 # 668 2
 		
+		buttons = event.buttons()
+		if buttons & Qt.LeftButton and buttons & Qt.RightButton:
+			cw.exit_app()
+			return
+		
 		if event.button() == Qt.RightButton and event.modifiers() & Qt.ControlModifier:
 			self.open_in_external()
 			return
@@ -1013,14 +1018,17 @@ class ControlWindow(QWidget, LinkedWindowMixin):
 		self.sort_mode = self.settings_dialog.sort_mode()
 		self.rebuild_image_list()
 		self.refresh_images()
-
+	def exit_app(self):
+		# print('line 4535 exit attempt starting')
+		self.save_state_to_file()
+		QApplication.instance().quit()
 	def __init__(self, image_window: ImageWindow, root: Path, auto_restore_coming_soon: False,start_file: Path | None = None):
 		super().__init__()
 		LinkedWindowMixin.collect(self)
 		self.start_file = start_file
 		self.setWindowTitle(str(root)) # 6_6
-		self.setFocusPolicy(Qt.StrongFocus)  # <<< Add this line
-		self.setFocus()					  # <<< Force focus
+		self.setFocusPolicy(Qt.StrongFocus)  # Focus
+		self.setFocus()					  # Focus
 		self.installEventFilter(self)
 		self.image_window = image_window
 		self.root = root
@@ -1150,6 +1158,10 @@ class ControlWindow(QWidget, LinkedWindowMixin):
 		self.key_timer.timeout.connect(self.on_key_timer)
 		self.key_direction = 0  # +1 for next, -1 for prev
 		self.has_image = False #672
+		
+		self.left_down = False
+		self.right_down = False
+
 	# maps Qt.Key_* -> folder index
 	KEY_TO_FOLDER = {
 		# 1
@@ -1469,6 +1481,15 @@ class ControlWindow(QWidget, LinkedWindowMixin):
 		except Exception as e:
 			print("Failed to auto-save session:", e)
 	def keyPressEvent(self, event: QKeyEvent):
+		key = event.key()
+		if key in (Qt.Key_Right, Qt.Key_Left):
+			if key == Qt.Key_Left:
+				self.left_down = True
+			elif key == Qt.Key_Right:
+				self.right_down = True
+			if self.left_down and self.right_down:
+				self.exit_app()
+				return
 	
 		# --- Ctrl + Arrow = move ImageWindow --- ctrl=5px, ctrl-alt-shift=1px, ctrl-shift=20px
 		if event.modifiers() & Qt.ControlModifier:
@@ -1587,6 +1608,10 @@ class ControlWindow(QWidget, LinkedWindowMixin):
 			# stop repeating
 			self.key_timer.stop()
 			self.key_direction = 0
+			
+			self.right_down = False
+			self.left_down = False
+
 		else:
 			super().keyReleaseEvent(event)
 
