@@ -2,7 +2,7 @@
 set -e
 
 # ----------------------------
-# User-local installer/uninstaller for Arlons File Sorter
+# User-local installer/uninstaller for File Sorter
 # 
 # # # # # Usage:
 # # Install
@@ -14,16 +14,16 @@ set -e
 # 
 # ----------------------------
 
-APP_NAME="arlons-file-sorter"
-RUN_SCRIPT_SRC="$(realpath "$(dirname "$0")/arlons-file-sorter.py")"
+APP_NAME="file-sorter"
+RUN_SCRIPT_SRC="$(realpath "$(dirname "$0")/file-sorter.py")"
 RUN_SCRIPT="$HOME/bin/$APP_NAME"
 DESKTOP_ENTRY="$HOME/.local/share/applications/$APP_NAME.desktop"
-ICON_PATH="$HOME/additions/graphics/icons/cowsGoatsBirds026_icon_144.ico"
+ICON_PATH="/home/knoppix/additions/graphics/icons/cowsGoatsBirds026_icon_144.ico"
 
 # Usage helper
 usage() {
     echo "Usage: $0 [--uninstall]"
-    echo "   --uninstall   Remove Arlons File Sorter"
+    echo "   --uninstall   Remove File Sorter"
     exit 1
 }
 
@@ -65,10 +65,10 @@ mkdir -p "$HOME/bin"
 # 2. Create the run script
 cat > "$RUN_SCRIPT" <<EOF
 #!/usr/bin/env bash
-# Auto-generated run script for Image Sorter
+# Auto-generated run script for File Sorter
 
 # Activate venv
-source ~/all/docs/txt/programs/python/arlons-file-sorter/venv/bin/activate
+source ~/all/docs/txt/programs/python-image-sorter-1/venv/bin/activate
 
 # Run the program
 python3 "$RUN_SCRIPT_SRC" "\$@"
@@ -83,7 +83,7 @@ cat > "$DESKTOP_ENTRY" <<EOF
 [Desktop Entry]
 Type=Application
 Name=Image Sorter
-Comment=Image viewer and sorter
+Comment=Image and File viewer and sorter
 Exec=$RUN_SCRIPT %f
 Icon=$ICON_PATH
 Terminal=false
