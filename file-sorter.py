@@ -677,7 +677,7 @@ class ControlWindow(QWidget, LinkedWindowMixin):
 		path, _ = QFileDialog.getSaveFileName(
 			self,
 			"Save Session",
-			str(self.root / "arlons-file-sorter-session.json"),
+			str(self.root / "file-sorter-session.json"),
 			"JSON Files (*.json)"
 		)
 		if not path:
@@ -1473,7 +1473,7 @@ class ControlWindow(QWidget, LinkedWindowMixin):
 		if hasattr(self, 'paired_window'):
 			self.paired_window.close()
 	def save_state_to_file(self):
-		auto_file = self.root / "arlons-file-sorter-session.json"
+		auto_file = self.root / "file-sorter-session.json"
 		state = self.serialize_state()
 		try:
 			with open(auto_file, "w", encoding="utf-8") as f:
@@ -1980,7 +1980,7 @@ class ImageSorter():
 	
 
 		image_window = ImageWindow()
-		auto_file = root / "arlons-file-sorter-session.json" # 6_5
+		auto_file = root / "file-sorter-session.json" # 6_5
 		AUTO_RESTORE_ENABLED = "--no-autorestore" not in sys.argv
 		control_window = ControlWindow(image_window, root,(AUTO_RESTORE_ENABLED and auto_file.exists()),start_file=start_file)
 		
